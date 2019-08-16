@@ -1,0 +1,94 @@
+<!-- Flexbox (inline-blog) este un sistem inteligent 
+      -(2017+) // are inca baguri
+       1) container>item //flexbox lucreaza doar pe doua nivele
+       2) are 2 axe *axa principala * axa secundara
+       3) direction (revers)
+       4) axele au inceput si sfirsit (left ,right ,top ,bottom)
+       5) alenierea(spacing-***)
+       6) wrap (less space)
+       7) compresie/si retingere - proportie 
+       8) column / row 
+       9) uniform H/V
+       10) order (z-index)
+
+      grid(table)
+      - (2019+)  // are inca baguri
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+
+        main{
+            border-top:3px solid grey;
+            border-bottom: 3px solid grey;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            display: flex;
+            width: 80vw;
+            margin: auto;
+            justify-content: space-between;
+        }
+        main article{
+            background-color: #eee;
+            padding: 1em;
+            width: 30vw;
+
+        }
+        main article:last-child{
+            border: 2px solid red;
+            background-color: rgb(252, 252, 125);
+        }
+
+
+
+
+
+        @media (max-width: 1000px){
+            main{
+                flex-wrap: wrap;
+            }
+            main article{
+                width: 100%;
+            }
+            main article:last-child{
+                order: -1;
+            }
+            main article{
+                margin-bottom: 2em;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <main>
+        <article>
+            <h2>Article 1 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur itaque, suscipit blanditiis exercitationem nemo, iste asperiores similique rerum id at quidem quaerat. Enim optio at explicabo aut, corrupti quasi laudantium aperiam, nulla nisi quos distinctio. Ad reprehenderit maxime quae saepe animi velit asperiores, sapiente eius optio est sed, eligendi magni quas ex. Voluptas consectetur fugit laboriosam magni accusamus voluptate, tempora velit facere eos blanditiis dolores nemo voluptates vel enim sunt. Ullam atque ut sunt, quasi consequuntur nisi. Consequatur, voluptatem.</p>
+            <p>Fugiat, perspiciatis. Odit eaque, aliquam, aspernatur aperiam placeat non fuga obcaecati modi, quaerat officiis et. Voluptas perferendis at delectus aliquid quos excepturi assumenda, tempore consequuntur ullam minima culpa iusto odit quo optio dolorem quibusdam numquam officiis. Expedita accusantium reprehenderit aliquid sapiente mollitia, saepe quas voluptatibus tenetur ipsum odit ad ea neque animi labore inventore odio nam assumenda, autem quidem magnam. Animi aliquid molestiae adipisci! Fugit aliquid ipsam nobis eos vitae quae amet unde, aut perferendis asperiores pariatur quis, quam fuga?</p>
+        </article>
+        <article>
+            <h2>Article 2 </h2>
+            <p>Tempore accusamus totam ipsa voluptates alias quas nobis, quos sed voluptate adipisci expedita temporibus in error, saepe aspernatur aliquid! Nihil illo quod dolorum, in accusamus accusantium nobis. Neque dicta officiis suscipit itaque sed non debitis nam? Magni repudiandae adipisci provident eos! Et eum maxime blanditiis ipsum similique sint, reiciendis voluptatibus sapiente quis ducimus obcaecati, accusamus totam ad inventore nostrum. Rerum numquam accusamus ea, nemo deserunt harum aliquid consequatur, expedita dicta quasi reiciendis cumque dolor iure praesentium obcaecati necessitatibus sunt autem?</p>
+            <p>Debitis necessitatibus molestias commodi error optio repellendus tempore repellat incidunt totam assumenda, nemo nesciunt natus maxime asperiores corporis qui sit reiciendis labore eius ratione provident! Distinctio magnam unde quo odio hic voluptate delectus a qui saepe fugit voluptas culpa, est totam expedita reiciendis praesentium sunt enim, exercitationem rem officia. Repellendus ut suscipit dolorum? Ex unde distinctio illum reprehenderit quas explicabo sit, ducimus deserunt veritatis similique rem, tempora sequi? Asperiores cum optio veniam veritatis nobis doloremque? Esse molestias eaque ipsa alias.</p>
+        </article>
+        <article>
+            <h2>Article 3</h2>
+            <p>Atque, unde eos inventore dolorum voluptas impedit? Eveniet, commodi molestias alias inventore beatae eius voluptate cum omnis veniam fugit. Neque iusto sapiente, ratione explicabo enim eveniet rerum, unde culpa delectus magnam ipsa minima quo quasi laudantium libero molestiae quibusdam laborum perferendis ex? Qui voluptatibus praesentium repudiandae eaque sunt dolorem consequatur suscipit, voluptatem a error molestias porro atque inventore magni eius sed aliquid eum tenetur nobis ducimus unde vitae? Fugiat quidem tempore consequuntur iste natus molestias doloremque sunt vero veritatis animi?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt quos minus labore dolorum voluptate fugiat? Consequuntur recusandae laudantium distinctio ex aliquid amet fugit necessitatibus dolorem consequatur, reprehenderit rem praesentium deserunt, nulla voluptates ab repellat beatae ipsam quibusdam soluta quae? Nostrum est, mollitia facilis esse quae ullam repellat ea fuga accusantium delectus vero, unde voluptate sint ex aliquid inventore temporibus autem repellendus nesciunt illum! Laudantium doloremque voluptatem officiis nobis harum animi fugiat debitis perspiciatis beatae quas dolores, qui deserunt tempore iure.</p>
+            <p>Enim sapiente repudiandae unde fugiat ratione. Eveniet commodi voluptatum corrupti minus cum placeat eum omnis, odio impedit iusto quaerat nisi quasi labore quis expedita fuga aut. Doloribus at magni quas ipsa alias nesciunt rerum, consequuntur esse eos consequatur eligendi incidunt expedita laboriosam quos cum? Necessitatibus tempore sit natus exercitationem. Perferendis animi repellendus a dolores, id voluptates vitae placeat aliquam ipsa magni rem veniam, ea cupiditate facilis pariatur quas architecto voluptatibus molestiae, eaque qui suscipit amet doloremque ab. Velit, quia iste!</p>
+        </article>
+    </main>
+
+</body>
+</html>
